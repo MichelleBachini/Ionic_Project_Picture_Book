@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Table of Contents
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list inset *ngFor="let chapter of chapters">
+    <ion-item>
+      <ion-icon ios="ios-paw" md="md-paw"></ion-icon><a href="chapter{{chapter.id}}"> {{chapter.title}}</a>
+    </ion-item>
+  </ion-list>
+</ion-content>
